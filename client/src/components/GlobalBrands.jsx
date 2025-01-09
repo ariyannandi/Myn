@@ -1,8 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
-import { images } from "../assets/medalWorthy";
+import { images } from "../assets/globalBrands";
 
-const MedalWorthy = () => {
+const GlobalBrands = () => {
   const sliderSettings = {
     dots: true,
     infinite: true,
@@ -16,7 +16,7 @@ const MedalWorthy = () => {
   return (
     <div className="mt-6">
       <h1 className="my-10 mx-5 font-bold text-2xl text-gray-800">
-        MEDAL WORTHY BRANDS TO BAG
+        GRAND GLOBAL BRANDS
       </h1>
       <Slider {...sliderSettings}>
         {images.map((image, index) => (
@@ -29,4 +29,4 @@ const MedalWorthy = () => {
   );
 };
 
-export default MedalWorthy;
+export default GlobalBrands;
