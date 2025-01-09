@@ -19,23 +19,23 @@ const Nav = () => {
         <div className="w-2/3 lg:w-1/2 flex items-center  mx-2 ">
           <img src={Logo} alt="Logo" width={53} height={36} className=" mx-5" />
 
-          <div className="text-black justify-between text-[12px] font-semibold flex gap-8 mx-4">
-            <a href="/men" className="hover:text-gray-300">
+          <div className="text-black justify-between text-[12px] font-bold flex gap-8 mx-4">
+            <a href="/men" className="">
               MEN
             </a>
-            <a href="/women" className="hover:text-gray-300">
+            <a href="/women" className="">
               WOMEN
             </a>
-            <a href="/kids" className="hover:text-gray-300">
+            <a href="/kids" className="">
               KIDS
             </a>
-            <a href="/lifestyle" className="hover:text-gray-300">
+            <a href="/lifestyle" className="">
               HOME & LIVING
             </a>
-            <a href="/beauty" className="hover:text-gray-300">
+            <a href="/beauty" className="">
               BEAUTY
             </a>
-            <a href="/studio" className="hover:text-gray-300 relative">
+            <a href="/studio" className=" relative">
               STUDIO
               <span className="align-super text-[9px] text-red-500 absolute top-[-0.5rem] left-[100%] ml-1 ">
                 NEW
@@ -44,11 +44,11 @@ const Nav = () => {
           </div>
         </div>
 
-        <div className="w-1/3 lg:w-1/2 flex items-center justify-between  gap-3 ">
+        <div className="w-1/3 lg:w-[45%] flex items-center justify-between gap-3 ">
           <div
-            className={`flex items-center space-x-2 ${
+            className={`flex items-center mx-2space-x-2 ${
               isFocused ? "bg-white" : "bg-gray-100"
-            }  text-black rounded-sm px-2 py-1 flex-row-reverse text-sm gap-3 w-[70%]`}
+            }  text-black rounded-md px-2 py-1 flex-row-reverse text-sm gap-3 w-[70%] lg:w-[80%]`}
           >
             <input
               type="text"
@@ -59,21 +59,21 @@ const Nav = () => {
             />
             <div>
               <FontAwesomeIcon
-                className="text-gray-500 "
+                className="text-gray-500 px-1 "
                 icon={faMagnifyingGlass}
               />
             </div>
           </div>
 
-          <div className="flex items-center space-x-4 text-xs mx-2 ">
-            <div className="hover:text-gray-300 flex flex-col">
+          <div className="flex items-center space-x-4 text-xs font-bold mx-2 ">
+            <div className=" flex flex-col gap-1">
               <FontAwesomeIcon icon={faUser} />
               Profile
             </div>
-            <div className="hover:text-gray-300 flex flex-col">
+            <div className=" flex flex-col gap-1">
               <FontAwesomeIcon icon={faHeart} /> Wishlist
             </div>
-            <div className="hover:text-gray-300 flex flex-col">
+            <div className=" flex flex-col gap-1">
               <FontAwesomeIcon icon={faBagShopping} />
               Bag
             </div>
